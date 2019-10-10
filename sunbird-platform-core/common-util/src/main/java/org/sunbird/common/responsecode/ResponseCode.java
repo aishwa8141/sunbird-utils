@@ -730,6 +730,8 @@ public enum ResponseCode {
   errorProcessingRequest(
       ResponseMessage.Key.ERROR_PROCESSING_REQUEST,
       ResponseMessage.Message.ERROR_PROCESSING_REQUEST),
+  errorUnavailableCertificate(ResponseMessage.Key.ERROR_UNAVAILABLE_CERTIFICATE,
+          ResponseMessage.Message.ERROR_UNAVAILABLE_CERTIFICATE),
   invalidTextbook(ResponseMessage.Key.INVALID_TEXTBOOK, ResponseMessage.Message.INVALID_TEXTBOOK),
   csvRowsExceeds(ResponseMessage.Key.CSV_ROWS_EXCEEDS, ResponseMessage.Message.CSV_ROWS_EXCEEDS),
   invalidTextbookName(
@@ -831,6 +833,9 @@ public enum ResponseCode {
   errorNoDialcodesLinked(
       ResponseMessage.Key.ERROR_NO_DIALCODES_LINKED,
       ResponseMessage.Message.ERROR_NO_DIALCODES_LINKED),
+  eventsRequired(
+      ResponseMessage.Key.EVENTS_DATA_MISSING, ResponseMessage.Message.EVENTS_DATA_MISSING),
+  accountNotFound(ResponseMessage.Key.ACCOUNT_NOT_FOUND, ResponseMessage.Message.ACCOUNT_NOT_FOUND),
   OK(200),
   CLIENT_ERROR(400),
   SERVER_ERROR(500),

@@ -55,7 +55,7 @@ public class KafkaClient {
     }
     topics = consumer.listTopics();
     ProjectLogger.log(
-        "KafkaClient:loadTopics Kafka topic infos =>" + topics, LoggerEnum.INFO.name());
+            "KafkaClient:loadTopics Kafka topic infos =>" + topics, LoggerEnum.INFO.name());
   }
 
   private static void loadConsumerProperties() {
@@ -83,9 +83,9 @@ public class KafkaClient {
     } else {
       ProjectLogger.log("Topic id: " + topic + ", does not exists.", LoggerEnum.ERROR);
       throw new ProjectCommonException(
-          "TOPIC_NOT_EXISTS_EXCEPTION",
-          "Topic id: " + topic + ", does not exists.",
-          ResponseCode.CLIENT_ERROR.getResponseCode());
+              "TOPIC_NOT_EXISTS_EXCEPTION",
+              "Topic id: " + topic + ", does not exists.",
+              ResponseCode.CLIENT_ERROR.getResponseCode());
     }
   }
 

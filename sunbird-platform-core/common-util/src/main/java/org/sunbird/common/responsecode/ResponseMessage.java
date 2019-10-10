@@ -393,8 +393,9 @@ public interface ResponseMessage {
     String ERROR_CONFLICTING_ROOT_ORG_ID =
         "Root organisation ID of API user is conflicting with that of specified organisation ID.";
     String ERROR_UPDATE_SETTING_NOT_ALLOWED = "Update of system setting {0} is not allowed.";
-    String ERROR_CREATING_FILE = "Eroor Reading File";
+    String ERROR_CREATING_FILE = "Error Reading File";
     String ERROR_PROCESSING_REQUEST = "Something went wrong while Processing Request";
+    String ERROR_UNAVAILABLE_CERTIFICATE = "Certificate is unavailable";
     String INVALID_TEXTBOOK = "Invalid Textbook. Please Provide Valid Textbook Identifier.";
     String CSV_ROWS_EXCEEDS = "Number of rows in csv file is more than ";
     String INVALID_TEXTBOOK_NAME =
@@ -440,6 +441,7 @@ public interface ResponseMessage {
     String ERROR_USER_UPDATE_PASSWORD = "User is created but password couldn't be updated.";
     String ERROR_BGMS_MISMATCH = "Mismatch in {0} at row - {1}";
     String ERROR_USER_MIGRATION_FAILED = "User migration failed.";
+    String EMPTY_CONTENTS_FOR_UPDATE_BATCH_STATUS = "Contents should not be empty for batch status update.";
     String IDENTIFIER_VALIDATION_FAILED =
         "Valid identifier is not present in List, Valid supported identifiers are ";
     String FROM_ACCOUNT_ID_MISSING = "From Account id is mandatory.";
@@ -448,12 +450,12 @@ public interface ResponseMessage {
     String PARAM_NOT_MATCH = "%s-NOT-MATCH";
     String MANDATORY_HEADER_PARAMETER_MISSING = "Mandatory header parameter {0} is missing.";
     String RECOVERY_PARAM_MATCH_EXCEPTION = "{0} could not be same as {1}";
-    String EMPTY_CONTENTS_FOR_UPDATE_BATCH_STATUS =
-        "Contents should not be empty for batch status update.";
     String ERROR_USER_HAS_NOT_CREATED_ANY_COURSE =
         "User hasn't created any course, or may not have a creator role";
     String ERROR_UPLOAD_QRCODE_CSV_FAILED = "Uploading the html file to cloud storage has failed.";
     String ERROR_NO_DIALCODES_LINKED = "No dialcodes are linked to any courses created by user(s)";
+    String EVENTS_DATA_MISSING = "Events array is mandatory";
+    String ACCOUNT_NOT_FOUND = "Account not found.";
   }
 
   interface Key {
@@ -792,6 +794,7 @@ public interface ResponseMessage {
     String ERROR_UPDATE_SETTING_NOT_ALLOWED = "ERROR_UPDATE_SETTING_NOT_ALLOWED";
     String ERROR_CREATING_FILE = "ERROR_CREATING_FILE";
     String ERROR_PROCESSING_REQUEST = "ERROR_PROCESSING_REQUEST";
+    String ERROR_UNAVAILABLE_CERTIFICATE = "ERROR_UNAVAILABLE_CERTIFICATE";
     String INVALID_TEXTBOOK = "INVALID_TEXTBOOK";
     String CSV_ROWS_EXCEEDS = "CSV_ROWS_EXCEEDS";
     String INVALID_TEXTBOOK_NAME = "INVALID_TEXTBOOK_NAME";
@@ -827,7 +830,7 @@ public interface ResponseMessage {
     String INVALID_REQUEST_TIMEOUT = "INVALID_REQUEST_TIMEOUT";
     String ERROR_BGMS_MISMATCH = "ERROR_BGMS_MISMATCH";
     String ERROR_USER_MIGRATION_FAILED = "ERROR_USER_MIGRATION_FAILED";
-    String VALID_IDENTIFIER_ABSENSE = "IDENTIFIER IN LIST IS NOT SUPPORTED OR INCORRECT";
+    String VALID_IDENTIFIER_ABSENSE="IDENTIFIER IN LIST IS NOT SUPPORTED OR INCORRECT";
     String FROM_ACCOUNT_ID_MISSING = "FROM_ACCOUNT_ID_MISSING";
     String TO_ACCOUNT_ID_MISSING = "TO_ACCOUNT_ID_MISSING";
     String FROM_ACCOUNT_ID_NOT_EXISTS = "FROM_ACCOUNT_ID_NOT_EXISTS";
@@ -838,5 +841,7 @@ public interface ResponseMessage {
     String ERROR_USER_HAS_NOT_CREATED_ANY_COURSE = "USER_HAS_NOT_CREATED_ANY_COURSE";
     String ERROR_UPLOAD_QRCODE_CSV_FAILED = "ERROR_UPLOAD_QRCODE_CSV_FAILED";
     String ERROR_NO_DIALCODES_LINKED = "ERROR_NO_DIALCODES_LINKED";
+    String EVENTS_DATA_MISSING = "EVENTS_DATA_MISSING";
+    String ACCOUNT_NOT_FOUND = "ACCOUNT_NOT_FOUND";
   }
 }

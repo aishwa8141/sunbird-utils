@@ -365,4 +365,10 @@ public interface CassandraOperation {
       Map<String, Object> filters,
       List<String> fields,
       FutureCallback<ResultSet> callback);
+
+
+  public Response getRecordByObjectType(String keyspace,String tableName,String columnName,String key,int value,String objectType);
+
+  public Response performBatchAction(
+          String keyspaceName, String tableName, Map<String, Object> inputData);
 }
